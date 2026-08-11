@@ -274,6 +274,96 @@ button {
     gap: 20px;
 }
 
+.experience-project {
+    padding: 22px 0 4px;
+}
+
+.project-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 5px 10px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.02);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.experience-project h4 {
+    margin: 0 0 10px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.35rem;
+    letter-spacing: -0.03em;
+    color: var(--text);
+}
+
+.project-stack {
+    margin: 0 0 18px;
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-width: 760px;
+}
+
+.experience-project ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 12px;
+}
+
+.experience-project li {
+    position: relative;
+    padding-left: 18px;
+    color: var(--muted);
+    line-height: 1.65;
+    max-width: 760px;
+}
+
+.experience-project li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.72em;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 4px rgba(214, 255, 63, 0.08);
+}
+
+.experience-item[open] .experience-project {
+    animation: projectFadeIn 0.22s ease;
+}
+
+@keyframes projectFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 640px) {
+    .experience-project h4 {
+        font-size: 1.2rem;
+    }
+    .project-stack {
+        font-size: 0.85rem;
+    }
+    .experience-project li {
+        padding-left: 16px;
+        line-height: 1.55;
+    }
+}
+
 .expand-icon {
     display: grid;
     place-items: center;
