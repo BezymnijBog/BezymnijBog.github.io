@@ -267,6 +267,40 @@ button {
     border-top: 1px solid var(--line)
 }
 
+.experience-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.expand-icon {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    color: var(--muted);
+    font-size: 1.3rem;
+    transition: transform .25s ease, color .25s ease;
+}
+
+.experience-item[open] .expand-icon {
+    transform: rotate(45deg);
+    color: var(--accent);
+}
+
+.experience-item summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+    .experience-item summary::-webkit-details-marker {
+        display: none;
+    }
+
 .timeline-item {
     display: grid;
     grid-template-columns: 220px 1fr;
