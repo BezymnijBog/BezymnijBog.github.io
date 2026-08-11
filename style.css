@@ -437,8 +437,8 @@ button {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2,minmax(0,1fr));
-    gap: 20px
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 .project-card {
@@ -446,18 +446,20 @@ button {
     border: 1px solid var(--line);
     border-radius: var(--radius);
     background: var(--surface);
-    transition: .25s
+    transition: .25s;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    align-items: stretch;
 }
 
     .project-card:hover {
         transform: translateY(-5px);
-        border-color: #46505b
+        border-color: #46505b;
     }
 
 .project-card-featured {
-    grid-column: 1/-1;
-    display: grid;
-    grid-template-columns: 1.15fr 1fr
+    grid-column: auto;
 }
 
 .project-placeholder {
@@ -467,15 +469,26 @@ button {
     background: linear-gradient(135deg,rgba(214,255,63,.08),transparent 45%),repeating-linear-gradient(135deg,#151a1f 0,#151a1f 2px,#12161a 2px,#12161a 8px);
     color: #68727d;
     font-size: .72rem;
-    letter-spacing: .16em
+    letter-spacing: .16em;
 }
 
     .project-placeholder.small {
-        min-height: 240px
+        min-height: 390px;
     }
 
 .project-info {
-    padding: 30px
+    padding: 30px;
+}
+
+@media (max-width: 980px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card,
+    .project-card-featured {
+        grid-template-columns: 1fr;
+    }
 }
 
 .project-topline {
