@@ -365,6 +365,7 @@ button {
 }
 
 .expand-icon {
+    position: relative;
     display: grid;
     place-items: center;
     width: 34px;
@@ -373,8 +374,22 @@ button {
     border: 1px solid var(--line);
     border-radius: 50%;
     color: var(--muted);
-    font-size: 1.3rem;
+    font-size: 0;
     transition: transform .25s ease, color .25s ease;
+}
+
+.expand-icon::before,
+.expand-icon::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 1.5px;
+    border-radius: 999px;
+    background: currentColor;
+}
+
+.expand-icon::after {
+    transform: rotate(90deg);
 }
 
 .experience-item[open] .expand-icon {
