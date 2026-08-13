@@ -4,7 +4,8 @@ Senior C++ / Unreal Engine 5 Engineer
 
 Novosibirsk, Russia  
 Email: a.kurchev4698@gmail.com  
-GitHub: https://github.com/BezymnijBog
+Site: https://bezymnijbog.github.io  
+GitHub: https://github.com/BezymnijBog  
 
 ## Professional Summary
 
