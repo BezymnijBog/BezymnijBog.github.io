@@ -1,0 +1,8 @@
+\usepackage{needspace}
+
+% Не оставлять заголовок в самом низу страницы.
+\usepackage{etoolbox}
+
+\pretocmd{\section}{\Needspace{6\baselineskip}}{}{}
+\pretocmd{\subsection}{\Needspace{5\baselineskip}}{}{}
+\pretocmd{\subsubsection}{\Needspace{4\baselineskip}}{}{}
