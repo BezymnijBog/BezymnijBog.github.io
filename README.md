@@ -2,20 +2,16 @@
 
 Senior C++ / Unreal Engine 5 Engineer
 
-Novosibirsk, Russia  
+Novosibirsk, Russia, open to relocation or remote  
 Email: a.kurchev4698@gmail.com  
 Site: https://bezymnijbog.github.io  
 GitHub: https://github.com/BezymnijBog  
 
 ## Professional Summary
 
-Senior C++ Software Engineer with 6+ years of experience building real-time 3D applications, geometry-heavy software, and Unreal Engine systems.
-My background combines modern C++, computational geometry, real-time rendering, and software architecture with a strong foundation in physics and mathematics. 
-I enjoy solving technically challenging problems where analytical thinking and domain knowledge matter as much as implementation.
-
-Strong expertise in modern C++, Unreal Engine architecture, performance optimization, and large-scale software development. Experienced in owning complex features from architecture to production, refactoring legacy systems, and collaborating with cross-functional teams.
-
-Passionate about building maintainable, high-performance software and solving technically challenging problems.
+Senior C++ Software Engineer with nearly 7 years of experience specializing in real-time 3D applications, computational geometry, and Unreal Engine 5.
+Background in physics and mathematics, with a proven track record of building complex geometry-heavy software—from orthodontic CAD systems to large-scale urban digital twins.
+Focused on performance optimization, multithreading, and modern C++ architecture to deliver high-performance, maintainable systems.
 
 ## Technical Skills
 
@@ -29,7 +25,7 @@ UE5 / UE4, Geometry Processing, UMG / Slate, Blueprints, GAS, AI Module, CQTest,
 Computational Geometry, OpenGL, CGAL, VTK, OpenCascade
 
 **Engineering**:  
-Software Architecture, Performance,  Multithreading, Testing, Refactoring
+Software Architecture, Performance, Multithreading, Testing
 
 **Tools**:  
 CMake, UBT/UAT, Git, SVN, Visual Studio
